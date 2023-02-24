@@ -1,0 +1,134 @@
+.sidemenu{
+    background-color: #041737; 
+    width: 250px;
+    height: 100vh;
+    font-size: 14px;
+}
+.sidemenu h2{
+    color: #EA7E54;
+    font-size: 20px;
+    
+}
+#Dash h5{
+    background-color: #3963AD;
+    color: #CED7EA;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.sidemenus h4{
+    color: #49688D;
+    font-size: 14px;
+}
+.sidemenus ul li{
+    list-style-type: none;
+    margin-bottom: 10px;    
+}
+.sidemenus ul li a{
+    text-decoration: none;
+    color: #829ab9;
+}
+.sidemenus hr{
+    color: #677e9e;
+    width: 70%;
+}
+.card-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#card{
+    margin-top: 5px;
+    border-radius: 25px;
+}
+#card1{
+    width: 100%;
+    border-radius: 20px;
+}
+#card2{
+    width: 100%;
+    border-radius: 20px;
+}
+#card3{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card-title i{
+    color: #3A98B5;
+    background-color: #DEECF6;
+    border-radius: 200px;
+    width: 25px;
+    text-align: center;
+    
+}
+.card-body h5{
+    font-size: 16px;
+}
+.card-body h5 i{
+    font-size: 20px;
+}
+.card-body p i{
+    color: #6AB98A;
+}
+.card-body span{
+    color: #6AB98A;
+}
+#barchart-1{
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+   width: 49%;
+    
+}
+body{
+    background-color: #F0F1F3;
+}
+#barchart-2{
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    width: 49%;
+   
+    
+    
+}
+.per{
+    color: #6AB98A;
+}
+#main-table{
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    
+}
+.table tbody td button{
+    background-color: #D0ECDB;
+}
+.right-side{
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    width: 20%;
+    
+}
+
+#main-content{
+    margin-right: 15px;
+}
+aside i{
+    padding: 4px;
+    margin: 4px;
+}
+.dot{
+    border-radius: 100%;
+    background-color: #041737;
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+}
+.item-body p{
+    margin: 0px;
+}

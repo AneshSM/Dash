@@ -10,9 +10,7 @@
     
 }
 .sidemenu ul li a:hover{
-    background-color: beige;
-    
-    border-radius: 15px;
+    color: #DEECF6;
 
 }
 #Dash h5{
@@ -41,11 +39,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
+}
+.card-title i{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 .card:hover{
-    
-    box-shadow: 10px 10px #FFFFFF;
-    background-color: antiquewhite;
+    box-shadow: 0px 0px 5px #041737;
+}
+.middle:hover{
+    box-shadow: 0px 0px 5px #041737;
+}
+.footer:hover{
+    box-shadow: 0px 0px 5px #041737;
+}
+.right-side:hover{
+    box-shadow: 0px 0px 5px #041737;
 }
 #card{
     margin-top: 5px;
@@ -67,9 +78,11 @@
 .card-title i{
     color: #3A98B5;
     background-color: #DEECF6;
-    border-radius: 200px;
-    width: 25px;
-    text-align: center;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    
+    
     
 }
 .card-body h5{
@@ -98,10 +111,7 @@ body{
     background-color: #FFFFFF;
     border: 2px solid #FFFFFF;
     border-radius: 15px;
-    width: 49%;
-   
-    
-    
+    width: 49%; 
 }
 .per{
     color: #6AB98A;
@@ -113,6 +123,9 @@ body{
     padding: 5px;
     margin: 5px;
     
+}
+.tablemain{
+    width: 100%;
 }
 .table tbody td button{
     background-color: #D0ECDB;
@@ -143,6 +156,16 @@ aside i{
 .item-body p{
     margin: 0px;
 }
+#admin{
+    border: none;
+    outline: none;
+    background: transparent;
+    align-items: baseline;
+}
+.side{
+    align-items: baseline;
+}
+
 @media screen and (max-width:500px) {
     .sidemenu{
         background-color: #041737; 
@@ -184,8 +207,8 @@ aside i{
     #over{
         width: 50%;
     }
-    #main-table{
-        width: 450px;
+    .tablemain{
+        width: 300px;
     }
     .right-side{
         width: 100%;
@@ -196,7 +219,7 @@ aside i{
 
     }      
 }
-@media screen and (max-width:900px) {
+@media screen and (max-width:1000px) {
     .container{
         margin-left: 0px;
     }

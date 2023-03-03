@@ -11,6 +11,7 @@
 }
 .sidemenu ul li a:hover{
     color: #DEECF6;
+    border-left: 3px solid #DEECF6;
 
 }
 #Dash h5{
@@ -46,6 +47,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .card:hover{
     box-shadow: 0px 0px 5px #041737;
 }
@@ -55,8 +57,8 @@
 .footer:hover{
     box-shadow: 0px 0px 5px #041737;
 }
-.right-side:hover{
-    box-shadow: 0px 0px 5px #041737;
+.item-body:hover{
+    box-shadow: 0px 5px 5px #041737;
 }
 #card{
     margin-top: 5px;
@@ -80,10 +82,7 @@
     background-color: #DEECF6;
     border-radius: 100%;
     width: 40px;
-    height: 40px;
-    
-    
-    
+    height: 40px;    
 }
 .card-body h5{
     font-size: 16px;
@@ -135,10 +134,8 @@ body{
     border: 2px solid #FFFFFF;
     border-radius: 15px;
     width: 30%;
-    height: 100%;
-    
+    height: 100%; 
 }
-
 #main-content{
     margin-right: 15px;
 }
@@ -162,8 +159,11 @@ aside i{
     background: transparent;
     align-items: baseline;
 }
-.side{
-    align-items: baseline;
+.pe-lg-5 {
+    display: flex;
+    padding-right: 3rem !important;
+    align-items: center;
+    padding-left: 3px;
 }
 
 @media screen and (max-width:500px) {
@@ -217,7 +217,11 @@ aside i{
     .tablemain{
         object-fit: contain;
 
-    }      
+    }
+    .admin img,h5{
+        margin-left: 3px;
+    }
+    
 }
 @media screen and (max-width:1000px) {
     .container{
@@ -273,5 +277,6 @@ aside i{
     .tablemain{
         object-fit: contain;
 
-    }      
+    }    
+    
 }

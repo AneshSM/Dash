@@ -36,6 +36,9 @@
     color: #677e9e;
     width: 70%;
 }
+
+
+
 .card-title{
     display: flex;
     align-items: center;
@@ -57,8 +60,8 @@
 .footer:hover{
     box-shadow: 0px 0px 5px #041737;
 }
-.item-body:hover{
-    box-shadow: 0px 5px 5px #041737;
+.right-side:hover{
+    box-shadow: 0px 0px 5px #041737;
 }
 #card{
     margin-top: 5px;
@@ -165,6 +168,9 @@ aside i{
     align-items: center;
     padding-left: 3px;
 }
+table button{
+    width: 90px;
+}
 
 @media screen and (max-width:500px) {
     .sidemenu{
@@ -186,6 +192,18 @@ aside i{
     .card{
        margin-top: 5px;
     }
+    #main-content{
+        width: 100%;
+    }
+    #card{
+        margin-top: 5px;
+        border-radius: 25px;
+        flex-wrap: nowrap;
+        width: 100%;
+        flex-direction: column;
+            
+    }
+
     #card1{
         width: 100%;
         height: 100%;
@@ -208,22 +226,38 @@ aside i{
         width: 50%;
     }
     .tablemain{
-        width: 300px;
+        width: 100%;
     }
     .right-side{
         width: 100%;
         
     }
     .tablemain{
-        object-fit: contain;
+        width: 50%;
 
     }
     .admin img,h5{
         margin-left: 3px;
     }
+    #main-table{
+        width: 100%;
+    }
+    table{
+        width: 100%;
+    }
+    table button{
+        width: 50px;
+    }
+    table td{
+        width: 15px;
+    }
+    
     
 }
-@media screen and (max-width:1000px) {
+@media screen and (min-width:500px ) and (max-width:900px) {
+    body{
+        width: 100%;
+    }
     .container{
         margin-left: 0px;
     }
@@ -233,6 +267,17 @@ aside i{
         padding: 0;
         margin: 0;
         font-size: 14px;
+    }
+    .main{
+        width: 100vw;
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+    }
+    .main1{
+        width: 100%;
+        
+    
     }
     #barchart-1{
         width: 100%;
@@ -268,7 +313,7 @@ aside i{
         width: 50%;
     }
     #main-table{
-        width: 500px;
+        width: 100%;
     }
     .right-side{
         width: 100%;
@@ -279,4 +324,12 @@ aside i{
 
     }    
     
+}
+@media screen and (min-width:900px ) and (max-width:1000px){
+    body{
+        width: 100%;
+    }
+    .right-side{
+        width: 100%;
+    }
 }

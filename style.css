@@ -108,6 +108,7 @@
 }
 body{
     background-color: #F0F1F3;
+    
 }
 #barchart-2{
     background-color: #FFFFFF;
@@ -171,6 +172,11 @@ aside i{
 table button{
     width: 90px;
 }
+#main-table{
+    width: 100%;
+    overflow: auto;
+    
+}   
 
 @media screen and (max-width:500px) {
     .sidemenu{
@@ -241,6 +247,7 @@ table button{
     }
     #main-table{
         width: 100%;
+        overflow: scroll;
     }
     table{
         width: 100%;

@@ -16,55 +16,64 @@
 <body>
   <div class="main d-md-flex">
     <!-- sidemenu start -->
-    <aside class="sidemenu">
-      <div id="sidemenus" class="p-3">
-        <button class="btn d-lg-none btn-outline-success" type="button" data-bs-toggle="collapse"
+    <aside class="sidemenu" id="side1">
+      <div id="sidemenus" class="p-1">
+        
+
+        <button class="btn d-lg-none " type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
           aria-label="Toggle navigation">
           <i class="bi bi-toggles"></i>
+
         </button>
-        <div class="collapse-lg" id="navbarTogglerDemo02">
+
+        <div>
           <div class="side-main">
-            <h2 class="pt-3 m-3 ps-2"><i>CRM.io</i> </h2>
-            <div class="sidemenus" id="Dash">
-              <h5 type="" class="p-3 m-2 ">
+            <div class="Toggle d-lg-flex">
+              <h2 class="pt-md-3  " ><i style="color: #EA7E54;">CRM.io</i> </h2>
+              <button class="btn menu" onclick="openClose()"><i class="bi bi-list"></i></button>
+  
+            </div>
+
+            <div class="sidemenus collapse-lg" id="navbarTogglerDemo02">
+              <h4 type="" class="p-3 m-2 navsec" id="dash">
                 <i class="bi bi-ui-checks-grid p-2"></i> Dashboard
-              </h5>
-              <h4 class="p-3 m-2">
-                Management
               </h4>
-              <div class="justify-content-start">
+             <div class="sidemenus">
+              
+              
                 <ul class="nav-menus p-3 ">
-                  <li><a href="" class="navsec" id=" main-none" onclick="myfunction()"><i class="bi bi-files p-1"></i> Document</a></li>
-                  <li><a href="contact.html" class="navsec" onclick="myfunction()"><i class="bi bi-clipboard2-data-fill p-1"></i> Contact</a></li>
-                  <li><a href="prospect.html" class="navsec" onclick="myfunction()"><i class="bi bi-folder p-1"></i> Prospect</a></li>
-                  <li><a href="workflow.html" class="navsec" onclick="myfunction()"><i class="bi bi-recycle p-1"></i> Workflow</a></li>
+                  <li><i class="bi bi-files p-1"></i><a href="#" class="navsec" id=" main-none" onclick="myfunction()"> Document</a></li>
+                  <li><i class="bi bi-clipboard2-data-fill p-1"></i><a href="#" class="navsec" onclick="myfunction()"> Contact</a></li>
+                  <li><i class="bi bi-folder p-1"></i><a href="#" class="navsec" onclick="myfunction()"> Prospect</a></li>
+                  <li><i class="bi bi-recycle p-1"></i><a href="#" class="navsec" onclick="myfunction()"> Workflow</a></li>
                 </ul>
-              </div>
+              
 
               <hr class="ms-3">
 
+             </div>
 
 
               <div class="sidemenus">
-                <h4 class="p-3 m-2">
+                <h4 class="p-3 m-2 navsec">
                   Connection
                 </h4>
                 <ul class="nav-menus text-light p-3">
-                  <li class=""><a href="#"><i class="bi bi-chat p-1"></i> ChatIntegration</a></li>
-                  <li><a href="#"><i class="bi bi-bank p-1"></i> Marketing</a></li>
-                  <li><a href="#"><i class="bi bi-folder p-1"></i> Email</a></li>
+                  <li class=""><i class="bi bi-chat p-1"></i><a href="#" class="navsec"> ChatIntegration</a></li>
+                  <li><i class="bi bi-bank p-1"></i><a href="#" class="navsec"> Marketing</a></li>
+                  <li><i class="bi bi-folder p-1"></i><a href="#" class="navsec"> Email</a></li>
                 </ul>
                 <hr class="ms-3">
               </div>
 
               <div class="sidemenus">
-                <h4 class="p-3 m-2">
+                <h4 class="p-3 m-2 navsec">
                   Customer
                 </h4>
                 <ul class="nav-menus  text-light p-3">
-                  <li><a href="#"><i class="bi bi-arrow-left-right p-1"></i> Transaction</a></li>
-                  <li><a href="#"><i class="bi bi-gear p-1"></i> Maintaince</a></li>
+                  <li><i class="bi bi-arrow-left-right p-1"></i><a href="#" class="navsec"> Transaction</a></li>
+                  <li><i class="bi bi-gear p-1"></i><a href="#" class="navsec"> Maintaince</a></li>
                 </ul>
               </div>
             </div>
@@ -84,7 +93,7 @@
         <div class="col-md-6 fw-bold" id="over">
           <h2>Overview</h2>
         </div>
-        <div class="col-md-6  d-sm-flex justify-content-end mt-2 pe-lg-5 admin" id="header">
+        <div class="col-md-6  d-sm-flex justify-content-lg-end mt-2 pe-lg-5 admin" id="header">
           <i class="bi bi-bell fw-bold"></i>
           <img src="img/icons8-grinning-face-with-big-eyes-64.png" alt="" class="img-fluid ms-lg-3"
             style="height: 25px; width: 25px;">
@@ -110,17 +119,15 @@
           <!-- cards start -->
           <div class="row g-2 justify-content-start mb-1" id="card">
             <div class="col">
-              <div class="card h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Documents available"
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-bs-toggle="tooltip" data-bs-placement="top" title="Click Me"
                 id="card1">
                 <div class="card-body">
                   <h5 class="card-title cardtitle ">Document<i class="bi bi-printer text ms-5 "></i></h5>
                   <h2 class="card-text">146.000</h2>
                   <p class="text-muted"><i class="bi bi-arrow-up-right"></i><span>17%</span> since last week</p>
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    Click Me
-                  </button>
-
+                  
+                </div>
                   <!-- Modal -->
                   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -134,17 +141,17 @@
                           <h5 class="text-secondary">Documents Available</h5>
                           <div class="row">
                             <div class="col">
-                              <p class="text-warning">Software Team Report</p>
+                              <p class="text-primary">Software Team Report</p>
                             </div>
                             <div class="col ">
-                              <p>Total documents:100</p>
+                              <p class="text-primary">Total documents:100</p>
                               <img src="/img/document.jpg" alt="" class="img-fluid">
 
                             </div>
                           </div>
                           <div class="row">
                             <div class="col">
-                              <p class="text-warning">Delivery Team Report</p>
+                              <p class="text-primary">Delivery Team Report</p>
                             </div>
                           </div>
                         </div>
@@ -155,19 +162,17 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                
               </div>
             </div>
             <div class="col ">
-              <div class="card h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Contact us" id="card2">
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" data-bs-toggle="tooltip" data-bs-placement="top" title="Click Me" id="card2">
                 <div class="card-body">
                   <h5 class="card-title">Contact<i class="bi bi-telephone ms-5"></i></h5>
                   <h2 class="card-text">1400</h2>
                   <p class="text-muted"><i class="bi bi-arrow-up-right"></i><span>17%</span> since last week</p>
                   <!-- Button trigger modal -->
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                    Click Me
-                  </button>
+                </div>
                   
                   <!-- Modal -->
                   <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
@@ -181,17 +186,17 @@
                           <h5 class="text-secondary">Feel Free to Contact us</h5>
                           <div class="row">
                             <div class="col">
-                              <p class="text-warning">HR Team</p>
+                              <p class="text-primary">HR Team</p>
                             </div>
                             <div class="col ">
-                              <p>Total Members:10</p>
+                              <p class="text-primary">Total Members:10</p>
                               <img src="/img/contact.webp" alt="" class="img-fluid">
 
                             </div>
                           </div>
                           <div class="row">
                             <div class="col">
-                              <p class="text-warning">Management Team</p>
+                              <p class="text-primary">Management Team</p>
                             </div>
                           </div>
                         </div>
@@ -202,20 +207,17 @@
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
             <div class="col ">
-              <div class="card h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Email" id="card3">
-
+              <div class="card h-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" data-bs-toggle="tooltip" data-bs-placement="top" title="Click Me" id="card3">
                 <div class="card-body">
                   <h5 class="card-title">Email<i class="bi bi-envelope ms-5"></i></h5>
                   <h2 class="card-text">150.700</h2>
                   <p class="text-muted"><i class="bi bi-arrow-up-right"></i><span>17%</span> since last week</p>
                    <!-- Button trigger modal -->
-                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
-                    Click Me
-                  </button>
+                   
+                </div>
                   
                   <!-- Modal -->
                   <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
@@ -229,17 +231,17 @@
                           <h5 class="text-secondary">Connect With us</h5>
                           <div class="row">
                             <div class="col">
-                              <p class="text-warning">HR Team Mail</p>
+                              <p class="text-primary">HR Team Mail</p>
                             </div>
                             <div class="col ">
-                              <p class="text-danger">hr-gain@insighits.com</p>
+                              <p class="text-primary">hr-gain@insighits.com</p>
                               <img src="/img/mail.jpg" alt="" class="img-fluid">
 
                             </div>
                           </div>
                           <div class="row">
                             <div class="col">
-                              <p class="text-warning">Management Team</p>
+                              <p class="text-primary">Management Team</p>
                             </div>
                           </div>
                         </div>
@@ -250,7 +252,6 @@
                       </div>
                     </div>
                   </div>
-                </div>
               </div>
             </div>
 

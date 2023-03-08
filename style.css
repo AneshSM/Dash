@@ -1,6 +1,6 @@
 .sidemenu{
     background-color: #041737; 
-    width: 250px;
+    width: 10%;
     height: auto;
     font-size: 14px;
 }
@@ -14,7 +14,7 @@
     border-left: 3px solid #DEECF6;
 
 }
-#Dash h5{
+#dash {
     background-color: #3963AD;
     color: #CED7EA;
     border-radius: 10px;
@@ -35,6 +35,9 @@
 .sidemenus hr{
     color: #677e9e;
     width: 70%;
+}
+aside i{
+    color: #FFFFFF;
 }
 
 
@@ -70,14 +73,49 @@
 #card1{
     width: 100%;
     border-radius: 20px;
+    
+
+}
+.Toggle button{
+    display: flex;
+    align-items: baseline;
+    width: 40px;
+    height: 40px;
+    justify-content: baseline;
+    font-size: 1.3rem;
+    background-color: transparent;
+    border: none;
+    color: #FFFFFF;
+}
+.Toggle button:hover{
+    background-color: #677e9e;
+    color: #041737;
+    align-items: center;
+    justify-content: center;
+}
+.Toggle{
+    align-items: center;
+}
+.card-body{
+    opacity: 1;
+    cursor: pointer;
+}
+.card-body:hover{
+    opacity: 0.3;
+    
+    transition: all 2s ease;
 }
 #card2{
     width: 100%;
     border-radius: 20px;
+    
+
 }
 #card3{
     width: 100%;
     border-radius: 20px;
+
+
 }
 
 .card-title i{
@@ -125,6 +163,7 @@ body{
     border-radius: 15px;
     padding: 5px;
     margin: 5px;
+    overflow: scroll;
     
 }
 .tablemain{
@@ -174,7 +213,17 @@ table button{
 }
 #main-table{
     width: 100%;
-    overflow: auto;
+    
+}
+.sidemenus h5,h4,ul li a{
+    display: none;
+    text-align: end;
+    
+    
+}
+.sidemenus h4,ul li i{
+    font-size: 1.1rem;
+    text-align: center;
     
 }   
 
@@ -209,6 +258,7 @@ table button{
         flex-direction: column;
             
     }
+    
 
     #card1{
         width: 100%;
@@ -258,6 +308,26 @@ table button{
     table td{
         width: 15px;
     }
+    .side-main h2{
+    
+        display: flex;
+        align-items: baseline;
+        justify-content: center;
+    }
+    .sidemenus h5,h4,ul li a{
+        display: inline;
+        text-align: end;
+        
+        
+    }
+    .sidemenus h4,ul li i{
+        font-size: 1.1rem;
+        text-align: center;
+        
+    }
+    .Toggle button{
+        display: none;
+    }   
     
     
 }
@@ -329,14 +399,45 @@ table button{
     .tablemain{
         object-fit: contain;
 
-    }    
+    } 
+    .sidemenus h5,h4,ul li a{
+        display: inline;
+        text-align: end;
+        
+        
+    }
+    .sidemenus h4,ul li i{
+        font-size: 1.1rem;
+        text-align: center;
+        
+    }
+    .Toggle button{
+        display: none;
+    }      
     
 }
 @media screen and (min-width:900px ) and (max-width:1000px){
     body{
         width: 100%;
     }
+    .sidemenu{
+        width: 20%;
+    }
     .right-side{
         width: 100%;
     }
+    .sidemenus h5,h4,ul li a{
+        display: inline;
+        text-align: end;
+        
+        
+    }
+    .sidemenus h4,ul li i{
+        font-size: 1.1rem;
+        text-align: center;
+        
+    }
+    .Toggle button{
+        display: none;
+    }   
 }

@@ -1,24 +1,34 @@
-function openPage(pageName, elmnt, color) {
-    // Hide all elements with class="tabcontent" by default */
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+// const menu=document.querySelector(".menu");
+// menu.addEventListener("click",function(){
+//   expandSidebar()
+// })
+
+// function expandSidebar(){
+//   document.querySelector("body").classList.toggle("sidemenus")
+// }
+
+function openClose() {
+  var elems = document.getElementsByClassName('navsec');
+  const side=document.getElementById('side1');
+
+  
+    for (var i=0;i<elems.length;i+=1){
+      if (elems[i].style.display === "none") {
+        elems[i].style.display="inline";
+        elems[i].style.width = "20%";
+        side.style.width="20%";
+
+      } else {
+        elems[i].style.display = "none";
+        side.style.width="10%";
+
+        
+      }
+    
+     
+    
+      
+      
     }
-  
-    // Remove the background color of all tablinks/buttons
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
-    }
-  
-    // Show the specific tab content
-    document.getElementById(pageName).style.display = "block";
-  
-    // Add the specific color to the button used to open the tab content
-    elmnt.style.backgroundColor = color;
-  }
-  
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
-  
+    
+}

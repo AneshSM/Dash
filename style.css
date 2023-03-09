@@ -1,6 +1,6 @@
 .sidemenu{
     background-color: #041737; 
-    width: 10%;
+    width: 5%;
     height: auto;
     font-size: 14px;
 }
@@ -9,16 +9,20 @@
     font-size: 20px;
     
 }
-.sidemenu ul li a:hover{
+.sidemenu ul li i:hover{
     color: #DEECF6;
     border-left: 3px solid #DEECF6;
 
 }
+.sidemenu ul li :hover{
+    color: #DEECF6;
+    
+}
 #dash {
-    background-color: #3963AD;
-    color: #CED7EA;
+    background-color: #355fa8;
+    color: #DEECF6;
     border-radius: 10px;
-    font-size: 14px;
+    font-size: 1.2rem;
 }
 .sidemenus h4{
     color: #49688D;
@@ -78,24 +82,23 @@ aside i{
 }
 .Toggle button{
     display: flex;
-    align-items: baseline;
-    width: 40px;
-    height: 40px;
-    justify-content: baseline;
-    font-size: 1.3rem;
-    background-color: transparent;
+    align-items: center ;
     border: none;
-    color: #FFFFFF;
+    outline: none;
+   
+    font-size: 1.1rem;
+  
+    
+    /* color: #FFFFFF; */
 }
-.Toggle button:hover{
-    background-color: #677e9e;
+
+.Toggle button i:hover{
+    background-color:#FFFFFF;
     color: #041737;
-    align-items: center;
-    justify-content: center;
+    
+    
 }
-.Toggle{
-    align-items: center;
-}
+
 .card-body{
     opacity: 1;
     cursor: pointer;
@@ -221,11 +224,23 @@ table button{
     
     
 }
+.Toggle h2 i{
+    display: none;
+    color: #EA7E54;
+}
 .sidemenus h4,ul li i{
     font-size: 1.1rem;
     text-align: center;
     
-}   
+}
+
+.main1{
+    width: 100%;
+}
+.main{
+    width: 100%;
+}
+   
 
 @media screen and (max-width:500px) {
     .sidemenu{
@@ -327,6 +342,19 @@ table button{
     }
     .Toggle button{
         display: none;
+    }
+    .Toggle h2 i{
+        display: inline;
+        color: #EA7E54;
+    }
+    .side{
+        width: 100%;
+    }
+    #over{
+        width: 40%;
+    }
+    #header{
+        width: 60%;
     }   
     
     
@@ -391,6 +419,7 @@ table button{
     }
     #main-table{
         width: 100%;
+        overflow: scroll;
     }
     .right-side{
         width: 100%;
@@ -413,7 +442,14 @@ table button{
     }
     .Toggle button{
         display: none;
-    }      
+    }  
+    .Toggle h2 i{
+        display: inline;
+        color: #EA7E54;
+    }
+    .middle{
+        width: 100%;
+    }     
     
 }
 @media screen and (min-width:900px ) and (max-width:1000px){

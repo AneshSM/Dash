@@ -30,19 +30,22 @@
         <div>
           <div class="side-main">
             <div class="Toggle d-lg-flex">
-              <h2 class="pt-md-3  " ><i style="color: #EA7E54;">CRM.io</i> </h2>
+              <h2 class="pt-md-3  " ><i class="navsec">CRM.io</i> </h2>
               <button class="btn menu" onclick="openClose()"><i class="bi bi-list"></i></button>
   
             </div>
 
             <div class="sidemenus collapse-lg" id="navbarTogglerDemo02">
-              <h4 type="" class="p-3 m-2 navsec" id="dash">
-                <i class="bi bi-ui-checks-grid p-2"></i> Dashboard
-              </h4>
+              
              <div class="sidemenus">
               
-              
+                <h4 class="p-3 m-2 navsec">
+                  Management
+                </h4>
                 <ul class="nav-menus p-3 ">
+                  <li id="dash">
+                    <i class="bi bi-ui-checks-grid p-2"></i> <a href="#" class="navsec">Dashboard</a> 
+                  </li>
                   <li><i class="bi bi-files p-1"></i><a href="#" class="navsec" id=" main-none" onclick="myfunction()"> Document</a></li>
                   <li><i class="bi bi-clipboard2-data-fill p-1"></i><a href="#" class="navsec" onclick="myfunction()"> Contact</a></li>
                   <li><i class="bi bi-folder p-1"></i><a href="#" class="navsec" onclick="myfunction()"> Prospect</a></li>
@@ -87,7 +90,7 @@
 
     <!-- sidemenu ends -->
     <!-- body Start -->
-    <div class="container pt-1 main1">
+    <div class="container-fluid pt-1 main1">
       <!-- nav start -->
       <div class="row pt-3 side">
         <div class="col-md-6 fw-bold" id="over">
@@ -260,7 +263,7 @@
           <!-- card end -->
 
           <!-- Middle container -->
-          <div class="container pt-2 ">
+          <div class="container pt-2 middle">
             <div class="row justify-content-between" id="barchart">
               <div class="col-md-4 middle" id="barchart-1">
                 <h4 class="heading fw-bold">Recent worklows</h4>

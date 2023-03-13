@@ -1,29 +1,26 @@
 .sidemenu{
     background-color: #041737; 
     width: 5%;
-    height: auto;
+    height: 100vh;
     font-size: 14px;
+    
 }
 .sidemenu h2{
     color: #EA7E54;
     font-size: 20px;
+    background-color: transparent;
     
 }
-.sidemenu ul li i:hover{
+/* .sidemenu ul li i:hover{
     color: #DEECF6;
     border-left: 3px solid #DEECF6;
 
-}
+} */
 .sidemenu ul li :hover{
     color: #DEECF6;
     
 }
-#dash {
-    background-color: #355fa8;
-    color: #DEECF6;
-    border-radius: 10px;
-    font-size: 1.2rem;
-}
+
 .sidemenus h4{
     color: #49688D;
     font-size: 14px;
@@ -42,6 +39,7 @@
 }
 aside i{
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 
@@ -144,7 +142,7 @@ aside i{
     background-color: #FFFFFF;
     border: 2px solid #FFFFFF;
     border-radius: 15px;
-   width: 49%;
+    width: 49%;
     
 }
 body{
@@ -166,7 +164,7 @@ body{
     border-radius: 15px;
     padding: 5px;
     margin: 5px;
-    overflow: scroll;
+    /* overflow: scroll; */
     
 }
 .tablemain{
@@ -239,6 +237,14 @@ table button{
 }
 .main{
     width: 100%;
+}
+.showcase{
+    display: none;
+}
+#contact_page img{
+    width: 50%;
+    height: 50%;
+    border-radius: 5px;
 }
    
 
@@ -323,12 +329,12 @@ table button{
     table td{
         width: 15px;
     }
-    .side-main h2{
+    /* .side-main h2{
     
-        display: flex;
+         display: flex;
         align-items: baseline;
-        justify-content: center;
-    }
+        justify-content: center; 
+    } */
     .sidemenus h5,h4,ul li a{
         display: inline;
         text-align: end;
@@ -340,7 +346,11 @@ table button{
         text-align: center;
         
     }
-    .Toggle button{
+    .Toggle{
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Toggle .menu{
         display: none;
     }
     .Toggle h2 i{

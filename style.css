@@ -1,7 +1,7 @@
 .sidemenu{
     background-color: #041737; 
     width: 5%;
-    height: 100vh;
+    height: auto;
     font-size: 14px;
     
 }
@@ -27,7 +27,10 @@
 }
 .sidemenus ul li{
     list-style-type: none;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;  
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
 }
 .sidemenus ul li a{
     text-decoration: none;
@@ -186,6 +189,7 @@ body{
 aside i{
     padding: 4px;
     margin: 4px;
+     
 }
 .dot{
     border-radius: 100%;

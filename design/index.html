@@ -1,50 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
     <link rel="stylesheet" href="style.css">
-    <title>Design</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
-    <div class="side">
-        <aside id="sidebar">
-        </aside>
-    
-    </div>
 
-    <div class="main">
-        <header>
-
-        </header>
-        <div class="main-content">
-            <div class="content">
-                <div class="card">
-                    <h1>Muthuraaj</h1>
-                </div>
-                <div class="card">
-                    <h1>Muthuraaj</h1>
-                    
-                </div>
-                <div class="card">
-                    <h1>Muthuraaj</h1>
-                    
-                </div>
-                <div class="card">
-                    <h1>Muthuraaj</h1>
-                    
-                </div>
-            </div>
-            <div class="content-2">
+    <aside id="sidebar">
+        <div class="navbar">
+            <!-- navbar header -->
+            <div class="heading">
+                <h2 class="navsec"><i>CRM.io</i> 
                 
+                </h2> 
+                <button class="btn"  onclick="openClose()">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </button> 
             </div>
+            
+            
+            <!-- navbar content -->
+            <div class="navmenus">
+                <!-- 1st nav element  -->
+                <div class="sidemenus">
 
+               
+                    <ul class="nav-menus p-3 ">
+                      <li id="dashboard" onclick="navigate('dashboard')" class="tabs ">
+                         <span class="material-symbols-outlined">dashboard</span>
+                         <a href="#" class="navsec tabs"> Dashboard</a>
+                      </li>
+                      <h4 class="p-3   navsec">
+                        Management
+                      </h4>
+                      <li id="document" onclick="navigate('document')" class="tabs"> 
+                        <span class="material-symbols-outlined"> attach_file</span>
+                        <a href="#" class="navsec" id=" main-none" >Document</a>
+                      </li>
+                      <li id="contact" onclick="navigate('contact')" class="tabs">
+                        <span class="material-symbols-outlined">menu_book</span> 
+                        <a href="#" class="navsec">Contact</a>
+                       </li>
+                      <li id="proscept" onclick="navigate('proscept')" class="tabs">
+                        <span class="material-symbols-outlined">
+                            border_color
+                        </span> 
+                        <a href="#" class="navsec" > Prospect</a>
+                      </li>
+                      <li id="workflow" onclick="navigate('workflow')" class="tabs">
+                        <span class="material-symbols-outlined">
+                            rebase
+                        </span>  
+                        <a href="#" class="navsec" > Workflow</a>
+                      </li>
+                    </ul>
+    
+    
+                    <hr class="ms-3 navsec" >
+    
+                </div>
+                  <!-- 2nd navelement -->
+                  <div class="sidemenus">
+
+               
+                    <ul class="nav-menus p-3 ">
+                      
+                      <h4 class="p-3   navsec">
+                        Connection
+                      </h4>
+                      <li id="document" onclick="navigate('document')" class="tabs">
+                        <span class="material-symbols-outlined">
+                            chat
+                        </span>
+                        <a href="#" class="navsec" id=" main-none" > ChatIntegration</a>
+                      </li>
+                      <li id="contact" onclick="navigate('contact')" class="tabs"> 
+                        <span class="material-symbols-outlined">
+                            storefront
+                         </span>
+                        <a href="#" class="navsec" >Marketing</a>
+                      </li>
+                      <li id="proscept" onclick="navigate('proscept')" class="tabs">
+                        <span class="material-symbols-outlined ">
+                            mail_lock
+                        </span>
+                        <a href="#" class="navsec" > Email</a>
+                      </li>
+                    </ul>
+    
+    
+                    <hr class="ms-3 navsec">
+    
+                  </div>
+                  <!-- 3rd navelement -->
+                  <div class="sidemenus">
+
+               
+                    <ul class="nav-menus p-3 ">
+                      
+                      <h4 class="p-3   navsec">
+                        Customer
+                      </h4>
+                      <li id="document" onclick="navigate('document')" class="tabs">
+                        <span class="material-symbols-outlined">
+                            paid
+                        </span>
+                        <a href="#" class="navsec" id=" main-none" >Transaction</a>
+                      </li>
+                      <li id="contact" onclick="navigate('contact')" class="tabs">
+                        <span class="material-symbols-outlined">
+                            trending_down
+                        </span>
+                        <a href="#" class="navsec" >Maintaince</a>
+                      </li>
+                    </ul>
+    
+    
+                    <hr class="ms-3 navsec">
+    
+                  </div>
+            </div>
+            <!-- nav content ends -->
         </div>
+        <!-- navbar ends -->
+    </aside>
+    <!-- content -->
+
+    <!-- Dashboard -->
+    <div class="showcase" id="dashboard_page">
+        <div class="header">
+                <div class="col-md-6 fw-bold" id="over">
+                  <h2>Overview</h2>
+                </div>
+                <div class="col-md-6  d-sm-flex justify-content-lg-end mt-2 pe-lg-5 admin" id="navright">
+                    <span class="material-symbols-outlined">
+                        notifications_active
+                    </span>
+                  <img src="img/icons8-grinning-face-with-big-eyes-64.png" alt="" class="img-fluid ms-lg-3"
+                    style="height: 25px; width: 25px;">
+                  <h5 class="ms-lg-3">
         
+                    <select id="admin">
+                      <option>Administrator</option>
+                      <option> User 1</option>
+                      <option>User 2</option>
+                      <option>User 3</option>
+                    </select>
+                  </h5>
+        
+                </div>
+              
+        </div>
+    </div>
+
+    <!-- Dashboard ends -->
+
+    <!-- Document -->
+    <div class="showcase" id="document_page">
 
     </div>
-        
-    
+    <!-- Document Ends -->
+
+    <!-- Contact -->
+    <div class="showcase" id="contact_page">
+
+    </div>
+    <!-- Contact Ends -->
+
+    <!-- Prospect -->
+    <div class="showcase" id="proscept_page">
+
+    </div>
+    <!-- Prospect ends -->
+
+    <!-- Workflow -->
+    <div class="showcase" id="workflow_page">
+
+    </div>
+    <!-- Workflow Ends -->
+    <!-- script link -->
+    <script src="index.js"></script>
 </body>
+
 </html>

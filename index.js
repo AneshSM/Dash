@@ -20,7 +20,7 @@
 function openClose() {
   var elems = document.getElementsByClassName('navsec');
   const side=document.getElementById('side1');
-  const list=document.getElementById('dash')
+  // const list=document.getElementById('dash')
  
 
     for (var i=0;i<elems.length;i++){
@@ -60,7 +60,7 @@ function navigate(status='dashboard'){
       tabs[i].style.backgroundColor="transparent";
       // console.log(tabs[i]);
   }
-  navigator.style.borderLeft="3px solid #DEECF6";
+  // navigator.style.borderLeft="3px solid #DEECF6";
   navigator.style.color="#DEECF6";
   navigator.style.backgroundColor="#3963AD";
   navigator.style.borderRadius='5px';

@@ -26,36 +26,39 @@
           <div class="side-main">
             <div class="Toggle d-flex">
               <h2 class="pt-md-3  "><i class="navsec">CRM.io</i> </h2>
-              <button class="btn d-lg-none " type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+              <!-- <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <i class="bi bi-toggles"></i>
-
-              </button>
+              </button> -->
               <button class="btn menu" onclick="openClose()"><i class="bi bi-list"></i></button>
 
             </div>
 
-            <div class="sidemenus collapse-lg " id="navbarTogglerDemo02">
 
+            <!-- <div class="collapse-lg" id="navbarScroll"> -->
               <div class="sidemenus">
 
-               
+
                 <ul class="nav-menus p-3 ">
                   <li id="dashboard" onclick="navigate('dashboard')" class="tabs ">
-                    
+
                     <i class="bi bi-ui-checks-grid p-2 "></i> <a href="#" class="navsec tabs">Dashboard</a>
                   </li>
                   <h4 class="p-3   navsec">
                     Management
                   </h4>
-                  <li id="document" onclick="navigate('document')" class="tabs"><i class="bi bi-files "></i><a href="#" class="navsec" id=" main-none" >
+                  <li id="document" onclick="navigate('document')" class="tabs"><i class="bi bi-files "></i><a href="#"
+                      class="navsec" id=" main-none">
                       Document</a></li>
-                  <li id="contact" onclick="navigate('contact')" class="tabs"><i class="bi bi-clipboard2-data-fill "></i><a href="#" class="navsec" >
+                  <li id="contact" onclick="navigate('contact')" class="tabs"><i
+                      class="bi bi-clipboard2-data-fill "></i><a href="#" class="navsec">
                       Contact</a></li>
-                  <li id="proscept" onclick="navigate('proscept')" class="tabs"><i class="bi bi-folder"></i><a href="#" class="navsec" > Prospect</a>
+                  <li id="proscept" onclick="navigate('proscept')" class="tabs"><i class="bi bi-folder"></i><a href="#"
+                      class="navsec"> Prospect</a>
                   </li>
-                  <li id="workflow" onclick="navigate('workflow')" class="tabs"> <i class="bi bi-recycle"></i><a href="#" class="navsec" > Workflow</a>
+                  <li id="workflow" onclick="navigate('workflow')" class="tabs"> <i class="bi bi-recycle"></i><a
+                      href="#" class="navsec"> Workflow</a>
                   </li>
                 </ul>
 
@@ -70,9 +73,12 @@
                   Connection
                 </h4>
                 <ul class="nav-menus text-light p-3">
-                  <li class=""><i class="bi bi-chat"></i><a href="#" class="navsec"> Chating</a></li>
-                  <li><i class="bi bi-bank "></i><a href="#" class="navsec"> Marketing</a></li>
-                  <li><i class="bi bi-folder"></i><a href="#" class="navsec"> Email</a></li>
+                  <li class="tabs" onclick="navigate('chating')" id="chating"><i class="bi bi-chat"></i><a href="#"
+                      class="navsec"> Chating</a></li>
+                  <li class="tabs" onclick="navigate('marketing')" id="marketing"><i class="bi bi-bank "></i><a href="#"
+                      class="navsec"> Marketing</a></li>
+                  <li class="tabs" onclick="navigate('email')" id="email"><i class="bi bi-folder"></i><a href="#"
+                      class="navsec"> Email</a></li>
                 </ul>
                 <hr class="ms-3">
               </div>
@@ -82,11 +88,15 @@
                   Customer
                 </h4>
                 <ul class="nav-menus  text-light p-3">
-                  <li><i class="bi bi-arrow-left-right"></i><a href="#" class="navsec"> Transaction</a></li>
-                  <li><i class="bi bi-gear "></i><a href="#" class="navsec"> Maintaince</a></li>
+                  <li class="tabs" onclick="navigate('transaction')" id="transaction"><i
+                      class="bi bi-arrow-left-right"></i><a href="#" class="navsec"> Transaction</a></li>
+                  <li class="tabs" onclick="navigate('maintaince')" id="maintaince"><i class="bi bi-gear "></i><a
+                      href="#" class="navsec"> Maintaince</a></li>
                 </ul>
               </div>
-            </div>
+            <!-- </div> -->
+
+
           </div>
 
 
@@ -100,10 +110,11 @@
     <div class="container-fluid pt-1 " id="main-container">
       <!-- header start -->
       <div class="row pt-3 side" id="header">
+
         <div class="col-md-6 fw-bold" id="over">
           <h2>Overview</h2>
         </div>
-        <div class="col-md-6  d-sm-flex justify-content-lg-end mt-2 pe-lg-5 admin" id="header">
+        <div class="col-md-6  d-sm-flex justify-content-lg-end mt-2 pe-lg-5 admin" id="header1">
           <i class="bi bi-bell fw-bold"></i>
           <img src="img/icons8-grinning-face-with-big-eyes-64.png" alt="" class="img-fluid ms-lg-3"
             style="height: 25px; width: 25px;">
@@ -118,6 +129,7 @@
           </h5>
 
         </div>
+
       </div>
       <!-- header ends -->
       <!-- main div start -->
@@ -139,7 +151,7 @@
                     <h2 class="card-text">146.000</h2>
                     <p class="text-muted"><i class="bi bi-arrow-up-right"></i><span>17%</span> since last week</p>
                     <!-- Button trigger modal -->
-  
+
                   </div>
                   <!-- Modal -->
                   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
@@ -159,7 +171,7 @@
                             <div class="col ">
                               <p class="text-primary">Total documents:100</p>
                               <img src="/img/document.jpg" alt="" class="img-fluid">
-  
+
                             </div>
                           </div>
                           <div class="row">
@@ -175,19 +187,19 @@
                       </div>
                     </div>
                   </div>
-  
+
                 </div>
               </div>
               <div class="col ">
-                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop2" data-bs-toggle="tooltip"
-                  data-bs-placement="top" title="Click Me" id="card2">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"
+                  data-bs-toggle="tooltip" data-bs-placement="top" title="Click Me" id="card2">
                   <div class="card-body">
                     <h5 class="card-title ">Contact<i class="bi bi-telephone ms-5"></i></h5>
                     <h2 class="card-text">1400</h2>
                     <p class="text-muted"><i class="bi bi-arrow-up-right"></i><span>17%</span> since last week</p>
                     <!-- Button trigger modal -->
                   </div>
-  
+
                   <!-- Modal -->
                   <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
@@ -206,7 +218,7 @@
                             <div class="col ">
                               <p class="text-primary">Total Members:10</p>
                               <img src="/img/contact.webp" alt="" class="img-fluid">
-  
+
                             </div>
                           </div>
                           <div class="row">
@@ -225,16 +237,16 @@
                 </div>
               </div>
               <div class="col ">
-                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop3" data-bs-toggle="tooltip"
-                  data-bs-placement="top" title="Click Me" id="card3">
+                <div class="card h-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"
+                  data-bs-toggle="tooltip" data-bs-placement="top" title="Click Me" id="card3">
                   <div class="card-body">
                     <h5 class="card-title">Email<i class="bi bi-envelope ms-5"></i></h5>
                     <h2 class="card-text">150.700</h2>
                     <p class="text-muted"><i class="bi bi-arrow-up-right"></i><span>17%</span> since last week</p>
                     <!-- Button trigger modal -->
-  
+
                   </div>
-  
+
                   <!-- Modal -->
                   <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticBackdropLabel3" aria-hidden="true">
@@ -253,7 +265,7 @@
                             <div class="col ">
                               <p class="text-primary">hr-gain@insighits.com</p>
                               <img src="/img/mail.jpg" alt="" class="img-fluid">
-  
+
                             </div>
                           </div>
                           <div class="row">
@@ -271,11 +283,11 @@
                   </div>
                 </div>
               </div>
-  
+
             </div>
-  
+
             <!-- card end -->
-  
+
             <!-- Middle container -->
             <div class="container pt-2 ">
               <div class="row justify-content-between" id="barchart">
@@ -292,7 +304,7 @@
               </div>
             </div>
             <!-- Middle container ends -->
-  
+
             <!-- Footer content -->
             <div class="mt-2 ps-3 footer" id="main-table">
               <div class="row foot">
@@ -345,19 +357,19 @@
                       <td><button class="btn btn-outline-success">send</button></td>
                     </tr>
                   </tbody>
-  
+
                 </table>
               </div>
               <!-- Borderless Table ends -->
-  
+
             </div>
             <!-- Footer content Ends -->
           </div>
-  
+
           <!-- flex item1 ends -->
-  
+
           <!-- flex item2 -->
-  
+
           <div class="right-side mt-3" style="padding: 25px;">
             <!-- RIGHT HEADING -->
             <div class="heading pb-2">
@@ -369,13 +381,13 @@
                 <p></p>
               </div>
               <div class="ps-1 mb-1">
-  
+
                 <p class="fw-bold">Gadgets Corner</p>
                 <p class="text-muted">$20</p>
-  
-  
+
+
               </div>
-  
+
             </div>
             <div class="item-body d-flex">
               <div class="dot mb-4">
@@ -386,7 +398,7 @@
                   <p class="fw-bold">Lens Cart</p>
                   <p class="text-muted">$40</p>
                 </div>
-  
+
               </div>
             </div>
             <div class="item-body d-flex">
@@ -398,7 +410,7 @@
                   <p class="fw-bold">Camera Show</p>
                   <p class="text-muted">$25</p>
                 </div>
-  
+
               </div>
             </div>
             <div class="item-body d-flex">
@@ -410,38 +422,38 @@
                   <p class="fw-bold">Photo Shoot</p>
                   <p class="text-muted">$50</p>
                 </div>
-  
+
               </div>
-  
-  
-  
+
+
+
             </div>
             <!-- RIGHT HEADING 2-->
             <div class="heading p-3">
               <h5>Chats</h5>
             </div>
-  
+
             <!-- RIGHT HEADING2 ENDS -->
-  
+
             <!-- Right body2 -->
             <div class="item-body d-flex">
               <div class="dot mb-4">
                 <p></p>
               </div>
               <div class="ps-1">
-  
+
                 <p class="fw-bold">Muthuraaj</p>
                 <p class="text-muted">How are you!</p>
-  
+
               </div>
-  
+
             </div>
             <div class="item-body d-flex">
               <div class="dot mb-4">
                 <p></p>
               </div>
               <div class="ps-1">
-  
+
                 <p class="fw-bold">Vishnu</p>
                 <p class="text-muted">What u done</p>
               </div>
@@ -464,15 +476,15 @@
                 <p class="text-muted">Do something</p>
               </div>
             </div>
-  
+
             <!-- Right body ends -->
-  
+
           </div>
-  
-  
+
+
           <!-- flex item2 enda -->
         </div>
-        
+
 
       </div>
 
@@ -548,10 +560,10 @@
       <div class="showcase" id="contact_page">
         <div class="content ">
           <img src="img/contactus2.jpg" alt="" class="img-fluid">
-          
+
 
         </div>
-                  
+
       </div>
       <!-- Contacts ends -->
 
@@ -561,15 +573,45 @@
       </div>
       <!-- prospect end -->
 
-      <!-- Workflow Start -->
+      <!-- workflow st -->
       <div class="showcase" id="workflow_page">
 
       </div>
-      <!-- Workflow End -->
+      <!-- workflow end -->
+
+      <!-- chating st -->
+      <div class="showcase" id="chating_page">
+
+      </div>
+      <!-- chating end -->
+
+      <!-- marketing st -->
+      <div class="showcase" id="marketing_page">
+
+      </div>
+      <!-- marketing end -->
+
+      <!-- email st -->
+      <div class="showcase" id="email_page">
+
+      </div>
+      <!-- email end -->
+
+      <!-- transaction st -->
+      <div class="showcase" id="transaction_page">
+
+      </div>
+      <!-- transaction end -->
+
+      <!-- maintaince st -->
+      <div class="showcase" id="maintaince_page">
+
+      </div>
+      <!-- maintaince end  -->
 
       <!-- main ends -->
     </div>
-    
+
 
     <!-- body ends -->
   </div>
@@ -580,3 +622,4 @@
 </body>
 
 </html>
+

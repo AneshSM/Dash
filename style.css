@@ -1,8 +1,9 @@
 .sidemenu{
     background-color: #041737; 
     width: 5%;
-    height: auto;
+    height: 100vh;
     font-size: 14px;
+
     
 }
 .sidemenu h2{
@@ -20,7 +21,10 @@
     color: #DEECF6;
     
 }
-
+.sidemenu ul li i{
+    padding-right: 10px;
+    margin-right: 10px;
+}
 .sidemenus h4{
     color: #49688D;
     font-size: 14px;
@@ -30,7 +34,7 @@
     margin-bottom: 10px;  
     display: flex;
     align-items: center; 
-    justify-content: center; 
+    justify-content: flex-start; 
 }
 .sidemenus ul li a{
     text-decoration: none;
@@ -43,6 +47,10 @@
 aside i{
     color: #FFFFFF;
     cursor: pointer;
+}
+#nav-menus{
+    justify-content: flex-start;
+    padding-left: 10%;
 }
 
 
@@ -259,6 +267,13 @@ table button{
         padding: 0;
         margin: 0;
         font-size: 14px;
+        height: 10vh;
+    }
+    .sidemenus ul{
+        display: none;
+    }
+    .sidemenus h4{
+        display: none;
     }
     #barchart-1{
         width: 100%;
@@ -339,28 +354,15 @@ table button{
         align-items: baseline;
         justify-content: center; 
     } */
-    .sidemenus h5,h4,ul li a{
-        display: inline;
-        text-align: end;
-        
-        
-    }
-    .sidemenus h4,ul li i{
-        font-size: 1.1rem;
-        text-align: center;
-        
-    }
+   
+    
     .Toggle{
         align-items: center;
         justify-content: space-between;
     }
     .Toggle .menu{
-        display: none;
-    }
-    .Toggle h2 i{
-        display: inline;
-        color: #EA7E54;
-    }
+        display: block;
+    }   
     .side{
         width: 100%;
     }
@@ -368,8 +370,16 @@ table button{
         width: 40%;
     }
     #header{
-        width: 60%;
-    }   
+        /* width: 60%; */
+        /* display: flex; */
+        /* align-items: center; */
+        /* gap: 20; */
+        justify-content: space-between;
+    } 
+    
+    .sidemenus h5,h4,ul li a{
+        display: inline;
+    }  
     
     
 }

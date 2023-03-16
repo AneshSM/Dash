@@ -17,50 +17,73 @@
 // }
 const side = document.getElementById('side1');
 var elems = document.getElementsByClassName('navsec');
+const button=document.getElementById('Button');
+var mobielem=document.getElementsByClassName('mobileNav');
 
 var winwidth, cltwidth;
 window.onresize = window.onload = () => {
   winwidth = this.innerWidth;
   cltwidth = this.document.clientWidth;
-if(winwidth<1000){
-  side.style.width='100%';
-  for (var i = 0; i < elems.length; i++){
-    elems[i].style.display='inline'
-  }
-}
-else{
-  openClose()
-}
-
-}
-
-
-function openClose() {
-
-  // const list=document.getElementById('dash')
-
-  if (side.style.width === "5%") {
-    side.style.width = "20%";
-
-    for (var i = 0; i < elems.length; i++) {
-      elems[i].style.display = "inline";
-    }
-  }
-
+  if (winwidth < 1000) {
+    
+      button.addEventListener('click',function mobileScreen(){
+        
+        if (side.style.height === "5%") {
+          side.style.height = "100%";
+      
+          for (var i = 0; i < mobielem.length; i++) {
+            mobielem[i].style.display = "inline";
+          }
+        }
+      
+        else {
+          side.style.height = "5%";
+          for (var i = 0; i < mobielem.length; i++) {
+            mobielem[i].style.display = "none";
+          }
+      
+        }
+      
+      
+      }) 
+    
+  } 
   else {
-    side.style.width = "5%";
-    for (var i = 0; i < elems.length; i++) {
-      elems[i].style.display = "none";
-    }
+    
+      button.addEventListener('click',function lapScreen(){
+        
+    
+  
+  
+        if (side.style.width === "5%") {
+          side.style.width = "20%";
+      
+          for (var i = 0; i < elems.length; i++) {
+            elems[i].style.display = "inline";
+          }
+        }
+      
+        else {
+          side.style.width = "5%";
+          for (var i = 0; i < elems.length; i++) {
+            elems[i].style.display = "none";
+          }
+      
+        }
+      }
+    )
+    
+  }  
 
-  }
+  
+
 }
 
 
+ 
 
-
-
-
+  
+  
 
 
 // Tabs

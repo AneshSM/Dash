@@ -6,6 +6,32 @@
 
     
 }
+/* side menu styling */
+.side-main{
+    width: 100%;
+    height: 100%;
+}
+.heading{
+    width: 100%;
+    
+}
+#nav1{
+    width: 100%;
+    height: 45%;
+}
+#nav2{
+    width: 100%;
+    height: 30%;
+}
+#nav3{
+    width: 100%;
+    height: 25%;
+}
+.sidemenus ul{
+    width: 100%;
+    height: 95%;
+}
+
 .sidemenu h2{
     color: #EA7E54;
     font-size: 20px;
@@ -31,7 +57,7 @@
 }
 .sidemenus ul li{
     list-style-type: none;
-    margin-bottom: 10px;  
+    margin-bottom: 10px;   
     display: flex;
     align-items: center; 
     justify-content: flex-start; 
@@ -89,24 +115,23 @@ aside i{
     
 
 }
-.Toggle button{
-    display: flex;
-    align-items: center ;
-    border: none;
+.heading button{
+    /* display: flex;
+     /* align-items: center ;  */
+     background-color: transparent;
+    border: none; 
     outline: none;
+    margin: 10px;
    
     font-size: 1.1rem;
+    
   
     
     /* color: #FFFFFF; */
 }
 
-.Toggle button i:hover{
-    background-color:#FFFFFF;
-    color: #041737;
-    
-    
-}
+
+
 
 .card-body{
     opacity: 1;
@@ -158,6 +183,7 @@ aside i{
 }
 body{
     background-color: #F0F1F3;
+  
     
 }
 #barchart-2{
@@ -178,6 +204,7 @@ body{
     /* overflow: scroll; */
     
 }
+
 .tablemain{
     width: 100%;
 }
@@ -234,7 +261,7 @@ table button{
     
     
 }
-.Toggle h2 i{
+.heading h2 i{
     display: none;
     color: #EA7E54;
 }
@@ -249,6 +276,7 @@ table button{
 }
 .main{
     width: 100%;
+    height: 100vh;
 }
 .showcase{
     display: none;
@@ -267,7 +295,10 @@ table button{
         padding: 0;
         margin: 0;
         font-size: 14px;
-        height: 10vh;
+        height: 5%;
+    }
+    .sidemenu hr{
+        display: none;
     }
     .sidemenus ul{
         display: none;
@@ -356,11 +387,11 @@ table button{
     } */
    
     
-    .Toggle{
+    .heading{
         align-items: center;
         justify-content: space-between;
     }
-    .Toggle .menu{
+    .heading .menu{
         display: block;
     }   
     .side{
@@ -464,10 +495,10 @@ table button{
         text-align: center;
         
     }
-    .Toggle button{
-        display: none;
+    .heading button{
+        display: flex;
     }  
-    .Toggle h2 i{
+    .heading h2 i{
         display: inline;
         color: #EA7E54;
     }
@@ -497,7 +528,7 @@ table button{
         text-align: center;
         
     }
-    .Toggle button{
+    .heading button{
         display: none;
     }   
 }

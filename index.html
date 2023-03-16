@@ -17,30 +17,21 @@
   <div class="main d-md-flex">
     <!-- sidemenu start -->
     <aside class="sidemenu" id="side1">
-      <div id="sidemenus" class="p-1">
-
-
-
-
-        <div>
+        
           <div class="side-main">
-            <div class="Toggle d-flex">
-              <h2 class="pt-md-3  "><i class="navsec">CRM.io</i> </h2>
-              <!-- <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <i class="bi bi-toggles"></i>
-              </button> -->
-              <button class="btn menu" onclick="openClose()"><i class="bi bi-list"></i></button>
+            <div class="heading d-flex ">
+              <h2 class="pt-md-3  "><i class="navsec mobileNav">CRM.io</i> </h2>
+              
+              <button class="menu"  id="Button"><i class="bi bi-list"></i></button>
 
             </div>
 
 
-            <!-- <div class="collapse-lg" id="navbarScroll"> -->
-              <div class="sidemenus">
+            
+              <div class="sidemenus" id="nav1">
 
 
-                <ul class="nav-menus p-3 ">
+                <ul class="nav-menus p-3 mobileNav">
                   <li id="dashboard" onclick="navigate('dashboard')" class="tabs ">
 
                     <i class="bi bi-ui-checks-grid p-2 "></i> <a href="#" class="navsec tabs">Dashboard</a>
@@ -63,16 +54,17 @@
                 </ul>
 
 
-                <hr class="ms-3">
+                <hr class="ms-3 mobileNav">
 
               </div>
 
 
-              <div class="sidemenus">
-                <h4 class="p-3 m-2 navsec">
-                  Connection
-                </h4>
-                <ul class="nav-menus text-light p-3">
+              <div class="sidemenus" id="nav2">
+                
+                <ul class="nav-menus text-light p-3 mobileNav">
+                  <h4 class="p-3 m-2 navsec">
+                    Connection
+                  </h4>
                   <li class="tabs" onclick="navigate('chating')" id="chating"><i class="bi bi-chat"></i><a href="#"
                       class="navsec"> Chating</a></li>
                   <li class="tabs" onclick="navigate('marketing')" id="marketing"><i class="bi bi-bank "></i><a href="#"
@@ -80,14 +72,15 @@
                   <li class="tabs" onclick="navigate('email')" id="email"><i class="bi bi-folder"></i><a href="#"
                       class="navsec"> Email</a></li>
                 </ul>
-                <hr class="ms-3">
+                <hr class="ms-3 mobileNav">
               </div>
 
-              <div class="sidemenus">
-                <h4 class="p-3 m-2 navsec">
-                  Customer
-                </h4>
-                <ul class="nav-menus  text-light p-3">
+              <div class="sidemenus" id="nav3">
+                
+                <ul class="nav-menus  text-light p-3 mobileNav" >
+                  <h4 class="p-3 m-2 navsec">
+                    Customer
+                  </h4>
                   <li class="tabs" onclick="navigate('transaction')" id="transaction"><i
                       class="bi bi-arrow-left-right"></i><a href="#" class="navsec"> Transaction</a></li>
                   <li class="tabs" onclick="navigate('maintaince')" id="maintaince"><i class="bi bi-gear "></i><a
@@ -102,7 +95,7 @@
 
 
 
-        </div>
+       
     </aside>
 
     <!-- sidemenu ends -->

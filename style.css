@@ -2,10 +2,15 @@
     background-color: #041737; 
     width: 5%;
     height: 100vh;
-    font-size: 14px;
-
-    
+    font-size: 14px;   
 }
+
+.sidemenus ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+} 
 /* side menu styling */
 .side-main{
     width: 100%;
@@ -105,10 +110,7 @@ aside i{
 .right-side:hover{
     box-shadow: 0px 0px 5px #041737;
 }
-#card{
-    margin-top: 5px;
-    border-radius: 25px;
-}
+
 #card1{
     width: 100%;
     border-radius: 20px;
@@ -123,7 +125,7 @@ aside i{
     outline: none;
     margin: 10px;
    
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     
   
     
@@ -174,36 +176,20 @@ aside i{
 .card-body span{
     color: #6AB98A;
 }
-#barchart-1{
-    background-color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    border-radius: 15px;
-    width: 49%;
-    
-}
+
 body{
     background-color: #F0F1F3;
+    height: 100vh;
+    width: 100%;
+    overflow-y: hidden;
   
     
 }
-#barchart-2{
-    background-color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    border-radius: 15px;
-    width: 49%; 
-}
+
 .per{
     color: #6AB98A;
 }
-#main-table{
-    background-color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    border-radius: 15px;
-    padding: 5px;
-    margin: 5px;
-    /* overflow: scroll; */
-    
-}
+
 
 .tablemain{
     width: 100%;
@@ -278,15 +264,96 @@ table button{
     width: 100%;
     height: 100vh;
 }
-.showcase{
-    display: none;
-}
+
 #contact_page img{
     width: 50%;
     height: 50%;
     border-radius: 5px;
 }
-   
+/* overflow styling */
+#main-container{
+    width: 95%;
+    height: 100vh;
+}
+#header{
+    width: 100%;
+    height: 5vh;
+}
+.showcase{
+    display: none;
+    width: 100%;
+    height: 95vh;
+}
+#mainContent{
+    width: 100%;
+    height: 100%;
+}
+#content1{
+    width: 70%;
+    height: 100%;
+}
+#content2{
+    width: 30%;
+    height: 100%;
+}
+#card{
+    margin-top: 5px;
+    border-radius: 25px;
+    width: 100%;
+    height: 20%;
+}
+#MiddleContent{
+    width: 100%;
+    height: 40%;
+}
+#main-table{
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+    /* overflow: scroll; */
+    width: 98.5%;
+    height: 40%;
+    
+}
+.column{
+    height: 100%;
+}
+#barchart{
+    width: 100%;
+    height: 100%;
+}
+#barchart-1{
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    width: 49%;
+    height: 100%;
+}
+#barchart-2{
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 15px;
+    width: 49%; 
+    height: 100%;
+}
+.middle img{
+    width: 70%;
+    height: 70%;
+}
+#foot1{
+    width: 100%;
+    height: 10%;
+}
+#foot2{
+    width: 100%;
+    height: 10%;
+}
+#foot3{
+    width: 100%;
+    height: 80%;
+}
 
 @media screen and (max-width:500px) {
     .sidemenu{
@@ -304,6 +371,9 @@ table button{
         display: none;
     }
     .sidemenus h4{
+        display: none;
+    }
+    #Button{
         display: none;
     }
     #barchart-1{
@@ -411,15 +481,118 @@ table button{
     .sidemenus h5,h4,ul li a{
         display: inline;
     }  
-    
-    
+    body{
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    #main-container{
+        width: 100%;
+        height: 95%;
+    }
+    #header{
+        width: 100%;
+        height: 5%;
+    }
+    #over{
+        width: 40%;
+        height: 100%;
+    }
+    #header1{
+        width: 60%;
+        height: 100%;
+    }
+    .showcase{
+        display: none;
+        width: 100%;
+        height: 95%;
+    }
+    #mainContent{
+        width: 100%;
+        height: 100%;
+    }
+    #content1{
+        width: 100%;
+        height: 100%;
+    }
+    #content2{
+        width: 100%;
+        height: 100%;
+    }
+    #card{
+        margin-top: 5px;
+        border-radius: 25px;
+        width: 100%;
+        height: 20%;
+    }
+    #MiddleContent{
+        width: 100%;
+        height: 60%;
+    }
+    #main-table{
+        background-color: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 5px;
+        /* overflow: scroll; */
+        width: 98.5%;
+        height: 40%;
+        
+    }
+    .column{
+        height: 100%;
+    }
+    #barchart{
+        width: 100%;
+        height: 100%;
+    }
+    #barchart-1{
+        background-color: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+    }
+    #barchart-2{
+        background-color: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        border-radius: 15px;
+        width: 100%; 
+        height: 100%;
+    }
+    .middle img{
+        width: 100%;
+        height: 100%;
+    }
+    #foot1{
+        width: 100%;
+        height: 10%;
+    }
+    #foot2{
+        width: 100%;
+        height: 10%;
+    }
+    #foot3{
+        width: 100%;
+        height: 80%;
+    }
 }
 @media screen and (min-width:500px ) and (max-width:900px) {
     body{
         width: 100%;
+        overflow: scroll;
     }
     .container{
         margin-left: 0px;
+    }
+    #Button{
+        display: none;
     }
     .sidemenu{
         background-color: #041737; 
@@ -504,6 +677,108 @@ table button{
     }
     .middle{
         width: 100%;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+    }
+    #main-container{
+        width: 100%;
+        height: 95%;
+    }
+    #header{
+        width: 100%;
+        height: 5%;
+    }
+    #over{
+        width: 40%;
+        height: 100%;
+    }
+    #header1{
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .showcase{
+        display: none;
+        width: 100%;
+        height: 95%;
+    }
+    #mainContent{
+        width: 100%;
+        height: 100%;
+    }
+    #content1{
+        width: 100%;
+        height: 100%;
+    }
+    #content2{
+        width: 100%;
+        height: 100%;
+    }
+    #card{
+        margin-top: 5px;
+        border-radius: 25px;
+        width: 100%;
+        height: 20%;
+    }
+    #MiddleContent{
+        width: 100%;
+        height: 60%;
+    }
+    #main-table{
+        background-color: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 5px;
+        /* overflow: scroll; */
+        width: 98.5%;
+        height: 40%;
+        
+    }
+    .column{
+        height: 100%;
+    }
+    #barchart{
+        width: 100%;
+        height: 100%;
+    }
+    #barchart-1{
+        background-color: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        border-radius: 15px;
+        width: 100%;
+        height: 100%;
+    }
+    #barchart-2{
+        background-color: #FFFFFF;
+        border: 2px solid #FFFFFF;
+        border-radius: 15px;
+        width: 100%; 
+        height: 100%;
+    }
+    .middle img{
+        width: 100%;
+        height: 100%;
+    }
+    #foot1{
+        width: 100%;
+        height: 10%;
+    }
+    #foot2{
+        width: 100%;
+        height: 10%;
+    }
+    #foot3{
+        width: 100%;
+        height: 80%;
     }     
     
 }

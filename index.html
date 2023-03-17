@@ -22,7 +22,8 @@
             <div class="heading d-flex ">
               <h2 class="pt-md-3  "><i class="navsec mobileNav">CRM.io</i> </h2>
               
-              <button class="menu"  id="Button"><i class="bi bi-list"></i></button>
+              <button class="menu"  id="Button" ><i class="bi bi-list"></i></button>
+              <button class="mobilemenu d-lg-none" id="mobileButton"><i class="bi bi-toggle-on"></i></button>
 
             </div>
 
@@ -102,7 +103,7 @@
     <!-- body Start -->
     <div class="container-fluid pt-1 " id="main-container">
       <!-- header start -->
-      <div class="row pt-3 side" id="header">
+      <div class="row  side" id="header">
 
         <div class="col-md-6 fw-bold" id="over">
           <h2>Overview</h2>
@@ -132,11 +133,11 @@
       <div class="showcase" id="dashboard_page">
 
         <!-- flex item1 -->
-        <div class="d-lg-flex">
-          <div class="main-flex" id="main-content">
+        <div class="d-lg-flex" id="mainContent">
+          <div class="main-flex" id="content1">
             <!-- cards start -->
             <div class="row g-2 justify-content-start mb-1" id="card">
-              <div class="col">
+              <div class="column col">
                 <div class="card h-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-bs-toggle="tooltip"
                   data-bs-placement="top" title="Click Me" id="card1">
                   <div class="card-body">
@@ -183,7 +184,7 @@
 
                 </div>
               </div>
-              <div class="col ">
+              <div class="column col">
                 <div class="card h-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop2"
                   data-bs-toggle="tooltip" data-bs-placement="top" title="Click Me" id="card2">
                   <div class="card-body">
@@ -229,7 +230,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col ">
+              <div class="column col">
                 <div class="card h-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop3"
                   data-bs-toggle="tooltip" data-bs-placement="top" title="Click Me" id="card3">
                   <div class="card-body">
@@ -282,7 +283,7 @@
             <!-- card end -->
 
             <!-- Middle container -->
-            <div class="container pt-2 ">
+            <div class=" ps-3 container2 pt-2 " id="MiddleContent">
               <div class="row justify-content-between" id="barchart">
                 <div class="col-md-4 middle" id="barchart-1">
                   <h5 class="heading ">Recent worklows</h5>
@@ -299,8 +300,8 @@
             <!-- Middle container ends -->
 
             <!-- Footer content -->
-            <div class="mt-2 ps-3 footer" id="main-table">
-              <div class="row foot">
+            <div class="footer" id="main-table">
+              <div class="row foot" id="foot1">
                 <div class="col-md-6">
                   <h5 class="text-start">Document</h5>
                 </div>
@@ -314,9 +315,9 @@
                   </select>
                 </div>
               </div>
-              <p class="text-muted">Document tracking information</p>
+              <p class="text-muted" id="foot2">Document tracking information</p>
               <!-- Borderless table -->
-              <div class="tablemain">
+              <div class="tablemain" id="foot3">
                 <table class="table table-hover table-sm table-borderless">
                   <thead>
                     <tr>
@@ -363,7 +364,7 @@
 
           <!-- flex item2 -->
 
-          <div class="right-side mt-3" style="padding: 25px;">
+          <div class="right-side mt-3" style="padding: 25px;" id="content2">
             <!-- RIGHT HEADING -->
             <div class="heading pb-2">
               <h5>Popular Product</h5>

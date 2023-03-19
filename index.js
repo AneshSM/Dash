@@ -32,10 +32,40 @@ window.onresize = window.onload = () => {
 
 function SideBar(winWidth){
  if (winWidth < 1000) {
-    MobileBtn.addEventListener('click', mobileScreen) 
+      MobileBtn.addEventListener('click', mobileScreen);
+      if (side.style.height === "5%") {
+      side.style.height = "100%";
+
+      for (var i = 0; i < mobielem.length; i++) {
+      mobielem[i].style.display = "inline";
+      }
+    }
+
+    else {
+    side.style.height = "5%";
+    for (var i = 0; i < mobielem.length; i++) {
+      mobielem[i].style.display = "none";
+    }
+
+  }
   } 
   else {
-      button.addEventListener('click',lapScreen)
+      button.addEventListener('click',lapScreen);
+           if (side.style.width === "5%") {
+          side.style.width = "20%";
+      
+          for (var i = 0; i < elems.length; i++) {
+            elems[i].style.display = "inline";
+          }
+        }
+      
+        else {
+          side.style.width = "5%";
+          for (var i = 0; i < elems.length; i++) {
+            elems[i].style.display = "none";
+          }
+      
+        }
   }  
 }
 

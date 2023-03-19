@@ -25,19 +25,18 @@ var winwidth, cltwidth;
 window.onresize = window.onload = () => {
   winwidth = this.innerWidth;
   cltwidth = this.document.clientWidth;
-  if (winwidth < 1000) {
-    
+     
+ SideBar(windwidth);
+}
+
+
+function SideBar(winWidth){
+ if (winWidth < 1000) {
     MobileBtn.addEventListener('click', mobileScreen) 
-    
   } 
   else {
-    
       button.addEventListener('click',lapScreen)
-    
   }  
-
-  
-
 }
 
 
